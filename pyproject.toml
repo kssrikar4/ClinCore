@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ClinCore"
+version = "0.1.0"
+description = "A lightweight, CDISC-ready study engine."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=0.20.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "requests>=2.31.0",
+    "reportlab>=4.1.0",
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+ClinCore = "ClinCore.cli:main"
